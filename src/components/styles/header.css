@@ -1,0 +1,135 @@
+/* Basic Styling for Header */
+.header {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/564x/7b/b8/db/7bb8db63e5af18b6069918087ef264cd.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    height: max-content;
+}
+
+/* Top Bar Styling */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    width:  97%;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.header-top .address,
+.header-top .offers {
+    color: #333;
+}
+
+.header-top .contact a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Main Header Styling */
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 98%;
+}
+
+.header-main .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-main .navigation {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.header-main .navigation a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-main .book-now {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Banner Styling */
+
+.header-banner h1 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.header-banner .highlight {
+    font-weight: bold;
+    color: #f7d794;
+}
+
+.header-banner .discover-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .header-top {
+        flex-direction: row;
+    }
+
+    .header-top .address,
+    .header-top .offers {
+        flex: initial;
+        text-align: left;
+    }
+
+    .header-main .logo {
+        text-align: left;
+    }
+
+    .header-banner h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-main {
+        flex-direction: column;
+    }
+
+    .header-main .navigation {
+        justify-content: center;
+    }
+
+    .header-main .book-now {
+        width: 100%;
+        text-align: center;
+    }
+}
